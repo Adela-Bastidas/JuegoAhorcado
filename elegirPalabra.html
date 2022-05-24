@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elejir palabra</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <img src="./Imagenes/logo.png" alt="Logo-alura" class="logo">
+        <link rel="icon" href="./Imagenes/logo.png">
+    </header>
+    <main>
+        <label class="titulo1">Juego el ahorcado <img src="./Imagenes/sl.png" alt="" id="soga"></label>
+        <section>
+
+            <textarea  type="text" id="mns-palabra" cols="30" rows="10" placeholder="Ingrese una palabra" ></textarea>
+
+            <label id="advertencia"><img src="./imagenes/Admiracion.png" alt="">Max. de 8 letras</label>
+            <div id="botones">
+                <button  type="button"  id="btn-guardar">Guardar y empezar</button>
+                <a href="index.html"><button type="button"  id="btn-cancelar">Cancelar</button></a>
+                
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+         <p>&copy Copyright Juego del ahorcado - Alura - Adela Bastidas</p>
+    </footer>
+    
+</body>
+<script src="agregarPalabra.js"></script>
+<script src="validar.js"></script>
+</html>

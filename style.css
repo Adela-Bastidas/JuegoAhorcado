@@ -1,0 +1,500 @@
+
+    *{
+        background: #E5E5E5;
+    }
+
+    body{
+        font-size: 16px;
+    }
+    
+    .logo{
+        position: absolute;
+        left: 5%;
+        right: auto;
+        top: 3%;
+        bottom: 0%;
+    }
+    .logo:hover{
+        cursor: pointer;
+    }
+    
+    .titulo{
+        font-family: fantasy;
+        font-size: 2.8em;
+        color:#0A3871;
+        position: fixed;
+        margin: 1em 0em 0em 12em;
+    }
+    .titulo1{
+        font-family: fantasy;
+        font-size: 2.5em;
+        color:#0A3871;
+        position: fixed;
+        margin: 0.5em 0em 0em 12em;
+    }
+    
+    #soga{
+        
+        padding: 0.3em;
+        background: local;
+        float:inline-end;
+        vertical-align: middle;
+        transform: rotate(30deg);
+        max-width: 7%;
+        max-height: 7%;
+        background:local;
+        filter: opacity(0.7) drop-shadow(0 0 0 blue);
+    }
+    
+    #iniciar-juego{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1.4em;
+        gap: 0.5em;
+    
+        position: absolute;
+        margin:15em 0em 0em 28.8em;
+        width: 15em;
+        height: 4em;
+       
+        background: #0A3871;
+        border-radius: 24px;
+        transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    
+        font-family: 'Inter';
+        font-size: 1.2em;
+        font-weight: 400;
+        justify-content: center;
+        color: #FFFFFF;
+        
+      }
+    
+      #iniciar-juego:hover {
+        cursor: pointer;
+        background: #1B4F72;
+      }
+    
+    
+      #nueva-palabra{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1.4em;
+        gap: 0.5em;
+    
+        position: absolute;
+        margin:20em 0em 0em 29.3em;
+        width: 14em;
+        height: 3.7em;
+       
+        background: #ECF0F1 ;
+        border-radius: 24px;
+        transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    
+        font-family: 'Inter';
+        font-size: 1.2em;
+        font-weight: 400;
+        justify-content: center;
+        color: #0A3871;
+      }
+    
+      #nueva-palabra:hover {
+        cursor: pointer;
+        background: #FBFCFC;
+      }
+    
+      .piePag{
+          display: table;
+          position: relative;
+          margin-bottom: 2.4em;
+      }
+    
+      .pg{
+        position: absolute;
+        margin: 29.7em 0em 0.6em 0em;
+        background: local;
+        height: 10em;
+      }
+    
+      footer p{
+        font-family: 'Inter';
+        background: local;
+        font-style: normal;
+        font-weight: 600;
+        font-size: .8rem;
+        color: #0A3871;
+    
+        position: fixed;
+        margin: 47em 2.5em 2.5em 0.623em;
+    }
+    
+    
+    /*Estilos para elegir palabra*/
+    
+    #mns-palabra{
+        display: block;
+        position: fixed;
+        width: 28em;
+        height: 3em;
+        left: 10em;
+        top: 5em;
+        padding: 1.25em 2.1em;
+        border: none;
+        background:#E5E5E5;
+        outline: none;
+       
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 400;
+        font-size: 2em;
+        line-height: 150%; 
+        color: #0A3871;
+    }
+    #mns-palabra::placeholder{
+        color: #0A3871;
+    }
+    
+    
+    #advertencia{
+        position:relative;
+        width: 1.5em;
+        height: 1.125em;
+        left: 23em;
+        top: 32em;
+        padding: 0.6em;
+        margin: 0 1.5%;
+       
+        font-style: normal;
+        font-size: 12px;
+    
+        color: #495057;
+        opacity: 0.8;
+    
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 8px;
+    
+    }
+    
+    #botones{
+        position: fixed;
+        display: inline-block;
+        margin: 25.625em 0em 0em 8.75em;;  
+    }
+    
+    #btn-guardar{
+        display: inline-block;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1.25em;
+    
+        position: static;
+        width: 21em;
+        height: 5em;
+        left: 0em;
+        top: 0em;
+    
+        background: #0A3871;
+        border-radius: 20px;
+        color: #E5E5E5;
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0em 1.5em;
+    }
+    
+    #btn-guardar:hover{
+        cursor: pointer;
+        background: #1B4F72;
+    }
+    
+    #btn-cancelar{
+        display: inline-block;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1.25em;
+    
+        position: static;
+        width: 21em;
+        height: 5em;
+        left: 0em;
+        top: 0em;
+    
+        background: #D8DFE8;
+        border: 1px solid #0A3871;
+        box-sizing: border-box;
+        border-radius: 20px;
+    
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0em 1.5em;
+    }
+    
+    #btn-cancelar:hover{
+        cursor: pointer;
+        background: #ECF0F1;
+    }
+    
+    /*Estilos jugar*/
+    
+    #textArea{
+        position: fixed;
+        height: 1em;
+        width: 32em;
+        margin: 12em 0em 0em 19em;
+        padding: 0.7em;
+        border: none;
+        outline: none;
+    }
+    
+    #textArea span{
+        vertical-align: bottom;
+        font-size: 2em;
+        border-bottom: 2px solid #0A3871;
+        width: 1em;
+        text-align: center;
+        margin-right: 6px;
+        display: inline-block;
+        font-family: fantasy;
+        color:#0A3871;
+        
+    }
+    
+    #mostrar-letra{
+        position: absolute;
+        margin: 15.3em 0em 0em 21em;
+        font-size: large;
+        color:#495057;
+        font-family: fantasy;
+    }
+    
+    #botonesjugar{
+        position: fixed;
+        display: inline-block;
+        margin: 18.75em 0em 0em 15.625em;
+    }
+    
+    #btn-jugar{
+        display: inline-block;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1.25em;
+    
+        position: static;
+        width: 15em;
+        height: 5em;
+        left: 0em;
+        top: 0em;
+    
+        background: #0A3871;
+        border-radius: 20px;
+        color: #E5E5E5;
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0em 1.5em;
+    }
+    
+    #btn-jugar:hover{
+        cursor: pointer;
+        background: #1B4F72;
+    }
+    
+    #btn-desistir{
+        display: inline-block;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1.25em;
+    
+        position: static;
+        width: 15em;
+        height: 5em;
+        left: 22em;
+        top: 0em;
+    
+        background: #D8DFE8;
+        border: 1px solid #0A3871;
+        box-sizing: border-box;
+        border-radius: 20px;
+        color: #0A3871;
+    
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0em 1.5em;
+    }
+    
+    #btn-desistir:hover{
+        cursor: pointer;
+        background: #ECF0F1;
+    }
+    
+    #teclado {
+        position: absolute;
+        margin: 25.625em 40em 0.625em 18.125em;   
+    }
+
+    #keyboard {
+        margin: 0;
+        padding: 0;;
+        list-style: none;
+    }
+    #keyboard button {
+        float: left;
+        margin: 0 0.313em 0.313em 0;
+        width: 3em;
+        height: 3em;
+        line-height: 3em;
+        text-align: center;
+        background: #D8DFE8;
+        border: 1px solid #f9f9f9;
+        border-radius: 15px;
+        color: #0A3871;
+     }
+    
+     #keyboard button:hover {
+        position: relative;
+        top: 0.063em;
+        left: 0.063em;
+        border-color: #e5e5e5;
+        cursor: pointer;
+        }
+    
+        #resultado{
+            position: fixed;
+            font-family: fantasy;
+            font-size:x-large;
+            color: #CD6155;
+            border-color: #E5E5E5;
+            margin: 5em 0em 0em 15em;
+            visibility: hidden;
+        }
+    
+        /*Estilo imagen*/
+     
+        #piso{
+            position: fixed;
+            width: 18.75em;
+            margin: 12.5em 0em 0em 56.25em;
+            filter: brightness(1.1);
+            mix-blend-mode: multiply;
+            
+        }
+          
+/*Responsive*/
+
+@media (max-width:1200px){
+    body{
+        font-size: 14px;
+    }
+
+    .piePag{
+        display: table;
+        position: relative;
+        margin-bottom: 2em;
+    }
+  
+    .pg{
+      position: absolute;
+      margin: 40em 0em 0.6em 0em;
+      background: local;
+      height: 10em;
+    }
+  
+    footer p{
+
+      margin: 52em 2.5em 2.5em 0.623em;
+  }
+
+  #teclado {
+    position: absolute;
+    margin: 27em 38em 0.7em 18em;   
+    }
+  }
+
+  @media (max-width:992px){
+    body{
+        font-size: 16px;
+    }
+  
+    .pg{
+      position: absolute;
+      margin: 50em 0em 0.6em 0em;
+      background: local;
+      height: 10em;
+    }
+  
+    footer p{
+      margin: 71em 2em 2em 0.6em;
+  }
+
+  #teclado {
+    position: absolute;
+    margin: 27em 38em 0.7em 18em;   
+    }
+
+    #iniciar-juego{
+
+        margin:19em 0em 0em 28.8em;
+        width: 15em;
+        height: 4em;
+        
+      }
+    
+      #nueva-palabra{
+ 
+        margin:26em 0em 0em 29.3em;
+      }
+
+      #teclado {
+        position: absolute;
+        margin: 27em 20em 0.6em 15em;   
+    }
+
+    #piso{
+        margin: 12em 0em 0em 42em;
+        
+    }
+
+    #botonesjugar{
+        margin: 18.75em 0em 0em 13em;
+    }
+
+    .titulo1{
+        margin: 0.5em 0em 0em 8em;
+    }
+
+    #mns-palabra{
+        width: 28em;
+        height: 3em;
+        left: 10em;
+        top: 5em;
+    }
+
+    #textArea{
+        margin: 12em 0em 0em 17em;
+    }
+
+    #advertencia{
+        left: 17em;
+    }
+    
+    #botones{
+        margin: 25.625em 0em 0em 4em;;  
+    }
+    
+  }
+
+ /* @media (max-width:412px){
+
+  }
+
+  /*@media (max-width:576px){
+    
+  }*/
